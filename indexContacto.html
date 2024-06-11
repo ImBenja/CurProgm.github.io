@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CurProgm | Contacto</title>
+    <link rel="icon" type="image" href="assets/img/arte-icono.png" />
+    <link rel="stylesheet" href="assets/css/styleContacto.css" />
+  </head>
+  <body>
+    <nav id="Position-FixedMenu">
+      <button id="toggleMenu">&#9776;</button>
+      <div id="dropdownMenu" class="dropdown-content">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+
+          <input type="checkbox" id="toggle" style="display: none" />
+          <label for="toggle" class="boton-desplegable"> <li>Cursos</li></label>
+          <!-- SUB Menu De La Pagina -->
+          <ul class="lista-desplegable">
+            <a href="IndexCursos.html">Cursos</a>
+            <a href="indexCursosDiseño.html">Diseño</a>
+            <a href="indexCursosPrograming.html">Programacion</a>
+            <a href="indexCursosOffice.html">Oficina y Hogar</a>
+            <a href="indexCursosGestionContable.html">Gestion Contable</a>
+          </ul>
+
+          <li><a href="indexEspecializaciones.html">Especializaciones</a></li>
+          <li>
+            <a href="#"
+              ><span style="color: rgb(43, 226, 67)">Contacto</span></a
+            >
+          </li>
+          <li><a href="#">Nosotros</a></li>
+        </ul>
+
+        <span id="closeMenu">&#88;</span>
+      </div>
+
+      <!-- Nombre De La Pagina -->
+      <h6>Cur<span style="color: rgb(43, 226, 67)">Progm</span></h6>
+    </nav>
+    <!-- FIN DEL NOMBRE DE LA PAGINA -->
+
+    <!-- Titulo De Inicio -->
+    <h1 class="TituloPag">CONTACTENOS</h1>
+    <!-- FIN DEL TITULO DE INICIO -->
+
+    <!-- SUBTITULO DE LA SECCION DE CONTACTO -->
+    <p>
+      En esta seccion podras mandarnos cualquier consulta que tengas y te
+      <span style="color: rgb(43, 226, 67)">Responderemos.</span>
+    </p>
+    <br />
+    <!-- FIN DEL SUBTITULO DE CONTACTO -->
+
+    <div id="Cuenta">
+      <a href="#"><span class="Registro">Registrarse</span></a>
+      <a href="#"><span class="Sesion">Iniciar Sesion</span></a>
+    </div>
+    <br /><br />
+
+    <main>
+      <form action="mailto:benjamimjuarez156@gmail.com" method="post">
+        <h1>Rellene Estos Formularios.</h1>
+        <div id="NombreApe">
+          <input type="text" placeholder="Nombre" name="Nombre" required />
+          <input type="text" placeholder="Apellido" name="Apellido" required />
+        </div>
+        <br />
+
+        <div id="TelDate">
+          <input
+            type="text"
+            pattern="\d+"
+            class="Telefono"
+            placeholder="Numero de Telefono"
+            name="Telefono"
+            maxlength="12"
+            required
+          />
+          <input
+            type="number"
+            placeholder="Edad"
+            name="Edad"
+            min="14"
+            max="80"
+            required
+          />
+        </div>
+        <br />
+
+        <div id="TexTarea">
+          <textarea
+            placeholder="Escriba Su Consulta"
+            name="Consulta"
+            required
+            rows="10"
+            cols="120"
+          ></textarea>
+        </div>
+        <br />
+
+        <div id="MailLocaCiu">
+          <input type="email" placeholder="E-mail" name="E-mail" required />
+          <select name="Localidad" required>
+            <option>Seleccione su Localidad</option>
+            <option>Colombia</option>
+            <option>Argentina</option>
+            <option>Peru</option>
+            <option>Mexico</option>
+            <option>Chile</option>
+          </select>
+        </div>
+        <br /><br />
+
+        <div id="BorrarEnviar">
+          <input type="reset" value="Borrar" class="EnviarBorrar" />
+          <input type="submit" value="Enviar" class="EnviarBorrar" />
+        </div>
+        <br /><br />
+
+        <div class="rating">
+          <input
+            id="radio1"
+            type="radio"
+            name="estrellas"
+            value="5"
+            required
+          /><!--
+                --><label for="radio1">★</label
+          ><!--
+                --><input
+            id="radio2"
+            type="radio"
+            name="estrellas"
+            value="4"
+            required
+          /><!--
+                --><label for="radio2">★</label
+          ><!--
+                --><input
+            id="radio3"
+            type="radio"
+            name="estrellas"
+            value="3"
+            required
+          /><!--
+                --><label for="radio3">★</label
+          ><!--
+                --><input
+            id="radio4"
+            type="radio"
+            name="estrellas"
+            value="2"
+            required
+          /><!--
+                --><label for="radio4">★</label
+          ><!--
+                --><input
+            id="radio5"
+            type="radio"
+            name="estrellas"
+            value="1"
+            required
+          /><!--
+                --><label for="radio5">★</label>
+        </div>
+        <h2>
+          Dejanos tu estrella si te gusto nustra
+          <span style="color: rgb(26, 206, 20)">Pagina Web</span>
+        </h2>
+      </form>
+    </main>
+    <br /><br />
+
+    <footer>
+      <div id="Container-YA">
+        <div class="Logo-FOOTER">
+          <img src="assets/img/arte-icono.png" class="LOGO" />
+          <h4>EMPIEZA<span style="color: rgb(43, 226, 67)">YA!</span></h4>
+        </div>
+      </div>
+      <hr />
+
+      <p class="DerechosAutor">
+        &copy; 2024 <span style="color: rgb(43, 226, 67)">BenjotaWeb</span
+        ><sup>tm.</sup> Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <div class="whatsapp">
+      <a href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-whatsapp"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <script>
+      document
+        .getElementById("toggleMenu")
+        .addEventListener("click", function () {
+          document.getElementById("dropdownMenu").classList.toggle("show");
+        });
+
+      document
+        .getElementById("closeMenu")
+        .addEventListener("click", function () {
+          document.getElementById("dropdownMenu").classList.remove("show");
+        });
+    </script>
+  </body>
+</html>
